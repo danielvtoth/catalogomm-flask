@@ -1,9 +1,10 @@
-from flask import Flask, render_template
-import config
-import controllers
+from flask import Flask
 
-app = Flask(__name__, template_folder='templates')
-app.register_blueprint(controllers.main)
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "¡Hola, esta es mi aplicación Flask en Render!"
 
 if __name__ == '__main__':
-	app.run(host=config.env['host'], port=config.env['port'], debug=True)
+    app.run(debug=True)
