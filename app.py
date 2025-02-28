@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 # URL del webhook de n8n
-N8N_WEBHOOK_URL = "https://tudominio.n8n.cloud/webhook/12345"
+N8N_WEBHOOK_URL = "https://n8n-n8n-danielvtoth.qwquli.easypanel.host/webhook/81de7001-3a8a-4f4c-8a31-8d327f41ee09"
 
 @app.route('/consultar', methods=['POST'])
 def consultar_producto():
